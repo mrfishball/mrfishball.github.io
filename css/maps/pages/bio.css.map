@@ -1,0 +1,1 @@
+{"version":3,"sources":["bio.css"],"names":[],"mappings":"AAAA,KAAK,8CAA8C,sBAAsB,kBAAkB,cAAc,CAAC","file":"../../pages/bio.css","sourcesContent":[".bio{background:#fff url() no-repeat center center;background-size:cover;position:relative;height:em(740)}\n"]}

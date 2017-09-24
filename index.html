@@ -1,174 +1,340 @@
-<!DOCTYPE HTML>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Steven Kwok</title>
+        <meta name="description" content="A versatile and dedicated Software/Web Developer who is experienced with Python and Javascript.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
-	<head>
-		<title>Steven Kwok</title>
-		<meta charset="utf-8" />
-		<meta name="description" content="Hi, I'm Steven Kwok, a Web Developer who embraces the idea of Minimalism and Simplicity.">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="icon" href="images/icon.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="images/apple.png" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900'>
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+        <!-- <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css"> -->
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://use.fontawesome.com/25b6010636.js"></script>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <div class="page">
+          <header class="page-header">
+            <nav class="page-nav">
+              <a href="#services" class="page-nav__item is-active">Projects</a>
+              <a href="#portfolio" class="page-nav__item">Bio</a>
+              <a href="#blog" class="page-nav__item">Blog</a>
+              <a href="contact" class="page-nav__item">Contact</a>
+            </nav>
+          </header>
+          <div class="title-small">
+            <h1 class="title-small__title">
+              Steven
+              <span class="title-small__title-complement">
+                Kwok
+              </span>
+            </h1>
+          </div>
 
-		<!-- Header -->
-			<header id="header" class="topbar">
+          <section class="bio section">
+            <div class="site-width ma">
+              <a href="#" class="bio__item">
+                <span class="bio__item-date">2017</span>
+                <span class="bio__item-title">Software Engineer Intern</span>
+                <span class="bio__item-excerpt">say something meaning and awesome about your experience.</span>
+              </a>
+              <a href="#" class="bio__item">
+                <span class="bio__item-date">2016</span>
+                <span class="bio__item-title">Retail Manager</span>
+                <span class="bio__item-excerpt">say something meaning and awesome about your experience.</span>
+              </a>
+              <a href="#" class="bio__item">
+                <span class="bio__item-date">2015</span>
+                <span class="bio__item-title">Retail Associate Manager</span>
+                <span class="bio__item-excerpt">say something meaning and awesome about your experience.</span>
+              </a>
+            </div>
+          </section>
 
-				<!-- Logo -->
-					<h1 id="logo">Steven Kwok</h1>
+          <section class="services section" id="services">
+            <div class="site-width ma">
+              <h2 class="services__title section__title">Services</h2>
+              <p class="services__intro-text section__intro-text">
+                say something meaning and awesome about your services.
+              </p>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro">Intro</a></li>
-							<li><a href="#one">What I Do</a></li>
-							<li><a href="#two">Who I Am</a></li>
-							<li><a href="#work">My Work</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</nav>
+              <ul class="services__list grid">
+              <li class="services__item services--1 grid-lg--4">
+                <div class="services__item-icon">
+                  <i class="fa fa-cogs" aria-hidden="true"></i>
+                </div>
+                <h3 class="services__item-title">Web Development</h3>
+                <p class="services__item-description">
+                  blah blah blah blah blah blah blah blah blah blah
+                  blah blah blah blah blah blah blah blah blah blah
+                  blah blah blah blah blah.
+                </p>
+              </li>
+              <li class="services__item services--2 grid-lg--4">
+                <div class="services__item-icon">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </div>
+                <h3 class="services__item-title">Web Development</h3>
+                <p class="services__item-description">
+                  blah blah blah blah blah blah blah blah blah blah
+                  blah blah blah blah blah blah blah blah blah blah
+                  blah blah blah blah blah.
+                </p>
+              </li>
+              <li class="services__item services--3 grid-lg--4">
+                <div class="services__item-icon">
+                  <i class="fa fa-window-restore" aria-hidden="true"></i>
+                </div>
+                <h3 class="services__item-title">Web Development</h3>
+                <p class="services__item-description">
+                  blah blah blah blah blah blah blah blah blah blah
+                  blah blah blah blah blah blah blah blah blah blah
+                  blah blah blah blah blah.
+                </p>
+              </li>
+              <li class="services__item services--4 grid-lg--4">
+                <div class="services__item-icon">
+                  <i class="fa fa-rocket" aria-hidden="true"></i>
+                </div>
+                <h3 class="services__item-title">Web Development</h3>
+                <p class="services__item-description">
+                  blah blah blah blah blah blah blah blah blah blah
+                  blah blah blah blah blah blah blah blah blah blah
+                  blah blah blah blah blah.
+                </p>
+              </li>
+              <li class="services__item services--5 grid-lg--4">
+                <div class="services__item-icon">
+                  <i class="fa fa-plug" aria-hidden="true"></i>
+                </div>
+                <h3 class="services__item-title">Web Development</h3>
+                <p class="services__item-description">
+                  blah blah blah blah blah blah blah blah blah blah
+                  blah blah blah blah blah blah blah blah blah blah
+                  blah blah blah blah blah.
+                </p>
+              </li>
+                <li class="services__item services--6 grid-lg--4">
+                  <div class="services__item-icon">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="services__item-title">Web Development</h3>
+                  <p class="services__item-description">
+                    blah blah blah blah blah blah blah blah blah blah
+                    blah blah blah blah blah blah blah blah blah blah
+                    blah blah blah blah blah.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
 
-			</header>
+          <section class="portfolio section" id="portfolio">
+            <div class="site-width ma">
+              <h2 class="portfolio__title section__title">Portfolio</h2>
+              <p class="portfolio__intro-text section__intro-text">
+                sadweqw erdfkkg erpotgj erirjdnvbm qw ewrr cmcnvl nh.
+              </p>
+              <div class="grid">
+                <div class="portfolio__nav-column grid-lg--2">
+                  <ul class="portfolio__nav">
+                    <li class="portfolio__nav-li">
+                      <a href="#" class="portfolio__nav-item is-active">All</a>
+                    </li>
+                    <li class="portfolio__nav-li">
+                      <a href="#" class="portfolio__nav-item">Print</a>
+                    </li>
+                    <li class="portfolio__nav-li">
+                      <a href="#" class="portfolio__nav-item">Editorial</a>
+                    </li>
+                    <li class="portfolio__nav-li">
+                      <a href="#" class="portfolio__nav-item">Web</a>
+                    </li>
+                    <li class="portfolio__nav-li">
+                      <a href="#" class="portfolio__nav-item">Logo</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="portfolio__list-column  grid-lg--10">
+                  <ul class="portfolio__list grid">
+                    <li class="grid-lg--6">
+                      <a href="#" class="portfolio__item">
+                        <img src="images/port.jpg" alt="Thumbnail for [Portfolio entry]">
+                      </a>
+                    </li>
 
-		<!-- Intro -->
-			<section id="intro" class="main style1 dark fullscreen">
-				<div class="content container 75%">
-					<header>
-						<h2>Simplicity</h2>
-					</header>
-						<p>
-							isn't banal or compromising,<br />
-							it's <i>elegant</i>.
-						</p>
-					<footer>
-<!-- 						<a href="#one" class="button style2 down">More</a> -->
-					</footer>
-				</div>
-			</section>
+                    <li class="grid-lg--6">
+                      <a href="#" class="portfolio__item">
+                        <img src="images/port.jpg" alt="Thumbnail for [Portfolio entry]">
+                      </a>
+                    </li>
 
-		<!-- One -->
-			<section id="one" class="main style2 right dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>What I Do</h2>
-					</header>
-						<p>
-							In web development, <i>Prototypicality</i> is the basic mental image your brain creates to categorize everything you 	interact with. Your brain creates a template for how things <i>should</i> look and feel. Instead of adding pieces of element or functionality from scratch for the sake of being different, I take the inside-out approach that removes elements that can be distracting from the mental template. By making navigating your web site or application a natural part of browsing, users can focus on your contents and your contents alone. The end result is an experience that is truly unique. As Leonardo da Vinci said <i>"Simplicity is the ultimate sophistication."</i>
-						</p>
-				</div>
-<!-- 				<a href="#two" class="button style2 down anchored">Next</a> -->
-			</section>
+                    <li class="grid-lg--6">
+                      <a href="#" class="portfolio__item">
+                        <img src="images/port.jpg" alt="Thumbnail for [Portfolio entry]">
+                      </a>
+                    </li>
 
-		<!-- Two -->
-			<section id="two" class="main style2 left dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>Who I Am</h2>
-					</header>
-					<p>
-						Hi, I'm Steven Kwok, a Fullstack Developer based in New York City. Originally from Hong Kong &#40;thus the choice of this wallpaper&#41;. You may or may not know that a Fullstack Developer is someone who
-						excels in both back-end and front-end technologies. My works fall into a wide spectrum of web technology that consists of HTML, CSS, JavaScript, Python, Ruby, Databases, etc. But what does it all mean? It means a product that is simple, elegant on the eyes yet powerful and natural in its core.
-					</p>
-				</div>
-<!-- 				<a href="#work" class="button style2 down anchored">Next</a> -->
-			</section>
+                    <li class="grid-lg--6">
+                      <a href="#" class="portfolio__item">
+                        <img src="images/port.jpg" alt="Thumbnail for [Portfolio entry]">
+                      </a>
+                    </li>
 
-		<!-- Work -->
-			<section id="work" class="main style3 primary">
-				<div class="content container">
-					<header>
-						<h2>My Work</h2>
-						<p>Many more to come.</p>
-					</header>
+                    <li class="grid-lg--6">
+                      <a href="#" class="portfolio__item">
+                        <img src="images/port.jpg" alt="Thumbnail for [Portfolio entry]">
+                      </a>
+                    </li>
 
-					<!-- Lightbox Gallery  -->
-						<div class="container 75% gallery">
-							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="gallery/o2.html" data-poptrox="iframe, 1920x1080" class="image fit from-left"><img src="images/thumbs/01.jpg" title="&#10005 CLOSE" alt="O2 - Free your mind." /></a></div>
-								<div class="6u 12u(mobile)"><a href="gallery/moviee.html" data-poptrox="iframe, 1920x1080" class="image fit from-right"><img src="images/thumbs/02.jpg" title="&#10005 CLOSE" alt="Moviee. Simply movie." /></a></div>
-							</div>
-							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="http://journal.steven-kwok.com" data-poptrox="ignore" target="_blank" class="image fit from-left"><img src="images/thumbs/03.jpg" title="&#10005 CLOSE" alt="Journal - Sharing made easy." /></a></div>
-								<div class="6u 12u(mobile)"><a href="http://steven-kwok.com/Project-Manhattan" data-poptrox="ignore" target="_blank" class="image fit from-left"><img src="images/thumbs/04.jpg" title="&#10005 CLOSE" alt="Project-Manhattan - Explore the city that never sleeps." /></a></div>
-							</div>
-							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="http://www.steven-kwok.com/Test" data-poptrox="ignore" target="_blank" class="image fit from-left"><img src="images/thumbs/05.jpg" title="&#10005 CLOSE" alt="Social.ite - Your social world. At a glance." /></a></div>
-								<!-- <div class="6u 12u(mobile)"><a href="http://steven-kwok.com/Project-Manhattan" data-poptrox="ignore" target="_blank" class="image fit from-left"><img src="images/thumbs/04.jpg" title="&#10005 CLOSE" alt="Project-Manhattan - Explore the city that never sleeps." /></a></div> -->
-							</div>
-							<!-- <div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/fulls/05.jpg" data-poptrox="iframe, 1920x1080" class="image fit from-left"><img src="images/thumbs/05.jpg" title="&#10005 CLOSE" alt="Project 5" /></a></div>
-								<div class="6u 12u(mobile)"><a href="images/fulls/06.jpg" data-poptrox="iframe, 1920x1080" class="image fit from-right"><img src="images/thumbs/06.jpg" title="&#10005 CLOSE" alt="Project 6" /></a></div>
-							</div> -->
-						</div>
-				</div>
-			</section>
+                    <li class="grid-lg--6">
+                      <a href="#" class="portfolio__item">
+                        <img src="images/port.jpg" alt="Thumbnail for [Portfolio entry]">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
 
-		<!-- Contact -->
-			<section id="contact" class="main style3 secondary">
-				<div class="content container">
-					<header>
-						<h2>Say Hi</h2>
-						<p>See what I'm working on.</p>
-					</header>
-					<div class="box container 75%">
+          <section class="blog section" id="blog">
+            <div class="site-width ma">
+              <h2 class="blog__title section__title">Blog</h2>
+              <p class="blog__intro-tect section__intro-text">
+                sadweqw erdfkkg erpotgj erirjdnvbm qw ewrr cmcnvl nh.
+              </p>
 
-					<!-- Contact Form -->
-							<form target="_blank" method="post" action="https://formspree.io/mrfishball@gmail.com">
-								<div class="row 50%">
-									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row 50%">
-									<div class="12u"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
+              <ul class="blog__list grid">
+                <li class="blog__item grid-lg--4">
+                  <div class="blog__item-image-container">
+                    <a href="#">
+                      <img src="images/blog.jpg" alt="Thumbnail for [post title]">
+                    </a>
+                  </div>
+                  <header class="blog__item-header">
+                    <span class="blog__item tags">
+                      <a href="#" class="blog__item-tag">sdwew</a>
+                    </span>
+                    <h3 class="blog__item-title">ghstget</h3>
+                  </header>
+                  <div class="blog__item-excerpt">
+                      <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                      </p>
+                      <a href="" class="blog__item-read">Read More</a>
+                  </div>
+                </li>
+                <li class="blog__item grid-lg--4">
+                  <div class="blog__item-image-container">
+                    <a href="#">
+                      <img src="images/blog.jpg" alt="Thumbnail for [post title]">
+                    </a>
+                  </div>
+                  <header class="blog__item-header">
+                    <span class="blog__item tags">
+                      <a href="#" class="blog__item-tag">wewqer</a>
+                    </span>
+                    <h3 class="blog__item-title">cxcvxvf</h3>
+                  </header>
+                  <div class="blog__item-excerpt">
+                      <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                      </p>
+                      <a href="" class="blog__item-read">Read More</a>
+                  </div>
+                </li>
+                <li class="blog__item grid-lg--4">
+                  <div class="blog__item-image-container">
+                    <a href="#">
+                      <img src="images/blog.jpg" alt="Thumbnail for [post title]">
+                    </a>
+                  </div>
+                  <header class="blog__item-header">
+                    <span class="blog__item tags">
+                      <a href="#" class="blog__item-tag">eqre</a>
+                    </span>
+                    <h3 class="blog__item-title">xcvdd</h3>
+                  </header>
+                  <div class="blog__item-excerpt">
+                      <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                      </p>
+                      <a href="" class="blog__item-read">Read More</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
 
-					</div>
-				</div>
-			</section>
+          <section class="contact section" id="contact">
+            <div class="contact__wrapper ma">
+              <h2 class="contact__title section__title">Contact Me</h2>
+              <p class="contact__intro-text section__intro-text">
+                sadweqw erdfkkg erpotgj erirjdnvbm qw ewrr cmcnvl nh.
+              </p>
+              <form action="#" class="contact-form">
+                <div class="grid">
+                  <div class="contact-form__container grid-lg--4">
+                    <label for="contact-form__name" class="contact-form__label">Name</label>
+                    <input type="text" name="name" class="contact-form__field" id="contact-form__name">
+                  </div>
+                  <div class="contact-form__container grid-lg--4">
+                    <label for="contact-form__phone" class="contact-form__label">Phone</label>
+                    <input type="text" name="phone" class="contact-form__field" id="contact-form__phone">
+                  </div>
+                  <div class="contact-form__container grid-lg--4">
+                    <label for="contact-form__email" class="contact-form__label">Email</label>
+                    <input type="text" name="email" class="contact-form__field" id="contact-form__email">
+                  </div>
+                  <div class="contact-form__container grid-lg--12">
+                    <label for="contact-form__message" class="contact-form__label">Message</label>
+                    <textarea name="message" id="contact-form__message" class="contact-form__field contact-form__field--message"></textarea>
+                  </div>
+                </div>
+                <div class="ac">
+                  <button class="contact-form__button">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
 
-		<!-- Footer -->
-			<footer id="footer">
+          <footer class="page-footer">
+            <div class="site-width ma">
+              <p class="page-footer__title">Follow Me:</p>
+              <span class="page-footer__content">
+                <a href="#" class="page-footer__item">facebook</a>
+                <a href="#" class="page-footer__item">linkedin</a>
+                <a href="#" class="page-footer__item">twitter</a>
+              </span>
+              <span class="page-footer__copyright">© Steven Kwok 2017. All rights reserved.</span>
+            </div>
+          </footer>
 
-				<!-- Icons -->
-					<ul class="actions">
-						<li><a href="#" class="icon fa fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://github.com/mrfishball" class="icon fa fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon fa fa-google-plus"><span class="label">Google+</span></a></li>
-						<!--
-						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						-->
-					</ul>
+        </div>
+        <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script> -->
 
-				<!-- Menu -->
-					<ul class="menu">
-						<li>&copy; Steven Kwok</li><li>Images: <a href="http://unsplash.com">Unsplash</a></li>
-					</ul>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.min.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.min.js"></script>
-	</body>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
 </html>
