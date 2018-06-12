@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Project MANHATTAN</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-title" content="ProjectMANHATTAN">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<link rel="icon" href="static/img/icon.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="static/img/apple.png">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i">
+		<link rel="stylesheet" href="static/css/sweetalert.css">
+		<link rel="stylesheet" href="static/css/fotorama.css">
+		<link rel="stylesheet" href="static/css/style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="header">
+		    <div class="header-nav">
+		    	<!-- <img src="static/img/logo.svg" data-bind="event: { click: setIsSelected }"> -->
+	     		<div id="hamburger-menu" class="slider disabler" data-bind="event: { mousedown: slideMenu }">
+	     		</div>
+	     		<input id="pac-input" class="controls" type="text" placeholder="Search..." data-bind="event: { focus: pushMenu }, value: search, valueUpdate: 'keyup'" autocomplete="off">
+	     		<!-- <input id="pac-input-mobile" class="controls" type="text" placeholder="Search..." data-bind="event: { focus: mobileSearch }, value: search, valueUpdate: 'keyup'" autocomplete="off"> -->
+	     		<input id="pac-input-mobile" class="controls" type="text" placeholder="Search..." data-bind="event: { focus: mobileSearch }, value: search, valueUpdate: 'keyup'" autocomplete="off">
+	     		<div id="menu-mobile" data-bind="event: { click: setIsSelected }"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+					<nav class="results" data-bind="visible: isSelected">
+						<ul class="search-items" data-bind="foreach: searchResult">
+							<li class="search-item" data-bind="event: { mousedown: mobileFocus }">
+								<h4 data-bind="text: name"></h4>
+							</li>
+						</ul>
+						<ul class="search-items" data-bind="visible: searchResult() == 0">
+							<li class="search-item">
+						  	<h4>We can't find what you're looking for :(</h4>
+						  </li>
+					  </ul>
+					</nav>
+
+	     		<div id="my-location" class="slider" data-bind="event: { mousedown: centerMe }"><i class="fa fa-location-arrow slider" aria-hidden="true"></i></div>
+		    </div>
+					
+		  </div><!--header -->
+			<div class="content">
+		    	<div id="map"></div>
+		  </div><!-- content -->
+		 </div><!-- wrapper -->
+
+		 <nav id="menu-slide-left" class="menu menu-slide-left">
+		 	<div id="close">
+		 		<h3>Project MANHATTAN</h3>
+		 		<i class="fa fa-caret-left" aria-hidden="true"></i>
+		 	</div>
+		  <ul class="menu-items" data-bind="foreach: searchResult">
+		    <li class="menu-item" data-bind="event: { click: focus }">
+		    	<h4 data-bind="text: name"></h4>
+		    </li>
+		  </ul>
+		</nav><!--Menu slide from left-->
+
+		<nav id="menu-push-left" class="menu menu-push-left">
+		 	<div id="close">
+		 		<h3>Project MANHATTAN</h3>
+		 		<i class="fa fa-caret-left" aria-hidden="true"></i>
+		 	</div>
+		 	<ul class="menu-items" data-bind="foreach: searchResult">
+		    <li class="menu-item" data-bind="event: { click: focusSearch }">
+		    	<h4 data-bind="text: name"></h4>
+		    </li>
+		  </ul>
+		  <ul class="menu-items" data-bind="visible: searchResult() == 0">
+		  	<li class="menu-item">
+		    	<h4>We can't find what you're looking for :(</h4>
+		    </li>
+		  </ul>
+		</nav><!--Menu push from left-->
+
+		<nav id="menu-slide-bottom" class="menu menu-slide-bottom">
+			<div id="close"></div>
+	  	<div class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+            	<div id="infoHeader">
+								<h5 data-bind="text: selected().name"></h5>
+								<div id="rating" data-bind="style: { backgroundColor: '#' + selected().ratingStyle }, visible: selected().rating">	
+									<h4 data-bind="text: selected().rating"></h4>
+									<small>/10</small>
+								</div>
+            	</div>
+              
+              <div id="type">
+								<span><i class="fa fa-building" aria-hidden="true"></i></span>
+								<p data-bind="text: selected().categories"></p>
+              </div>
+              <div id="address">
+              	<span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+              	<ul data-bind="foreach: selected().address">
+              		<li><p data-bind="text: $data"></p></li> 
+              	</ul>
+              </div>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5>Contacts</h5>
+              <ul>
+                <li class="contacts"><i class="fa fa-phone" aria-hidden="true"></i><p data-bind="text: selected().contact ? selected().contact : 'N/A'"></p></li>
+                <li class="contacts"><i class="fa fa-external-link" aria-hidden="true"></i><a data-bind="attr: { href: selected().url }, text: selected().url"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          	<small>© Project MANHATTAN 2016.</small>
+          	<small><i>Powered by Foursquare.</i></small>
+          </div>
+        </div>
+      </div>
+      <div class="fotorama-wrapper">
+				<div id="fotorama" class="fotorama" data-nav="thumbs" data-auto="false" data-width="100%" data-maxheight="85%" data-fit="contain" data-allowfullscreen="true">
+				</div>
+			</div>
+		</nav><!-- Menu slide from bottom -->
+
+		<div id="mask" class="mask" data-bind="event: { click: closeMenu }"></div>
+		<script type="text/javascript" src="static/js/sweetalert.min.js"></script>
+		<script type="text/javascript" src="static/js/error.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="static/js/menu.js"></script>
+		<script type="text/javascript" src="static/js/fotorama.js"></script>
+		<script type="text/javascript" src="https://use.fontawesome.com/e77a3a669b.js"></script>
+		<script type="text/javascript" src="static/js/knockout-3.4.0.js"></script>
+		<script type="text/javascript" src="static/js/app.js"></script>
+		<script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoVzrmlxfvUBwId_KoqAF5PBnaHNDOEHU&callback=initMap" onerror="swal(alertOptions, alertAction);"></script>
+	</body>
+</html>
